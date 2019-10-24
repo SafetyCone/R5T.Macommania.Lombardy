@@ -12,7 +12,7 @@ namespace R5T.Macommania.Lombardy.Extensions
         /// </summary>
         public static string GetExecutableFileDirectoryPath(this IExecutableFilePathProvider executableFilePathProvider, IStringlyTypedPathOperator stringlyTypedPathOperator)
         {
-            var executableFilePath = executableFilePathProvider.GetExecutableFileDirectoryPath();
+            var executableFilePath = executableFilePathProvider.GetExecutableFilePath();
 
             var executableFileDirectoryPath = stringlyTypedPathOperator.GetDirectoryPathForFilePath(executableFilePath);
             return executableFileDirectoryPath;
